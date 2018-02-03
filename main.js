@@ -38,16 +38,16 @@ function setup(){
     buttonB.addEventListener("click", buttonB_Clicked);
     buttonC.addEventListener("click", buttonC_Clicked);
 
-    //textBoxA.innerHTML = localStorage.getItem("a");
-    textBoxA.innerHTML = localStorage;
+    textBoxA.innerHTML = localStorage.getItem("a");
+    //textBoxA.innerHTML = localStorage;
     textBoxB.innerHTML = localStorage.getItem("b");
     textBoxC.innerHTML = localStorage.getItem("c");
 }
 
 /* onlick events */
 function buttonA_Clicked(){
-  //localStorage.setItem("a", textBoxA.value);
-  localStorage = textBoxA.value;
+  localStorage.setItem("a", textBoxA.value);
+  //localStorage = textBoxA.value;
   console.log(localStorage);
 }
 function buttonB_Clicked(){
