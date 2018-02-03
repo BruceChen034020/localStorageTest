@@ -31,6 +31,7 @@ function setup(){
 function buttonA_Clicked(){
   //localStorage.setItem("a", textBoxA.value);
   localStorage = textBoxA.value;
+  console.log(localStorage);
 }
 function buttonB_Clicked(){
   localStorage.setItem("b", textBoxB.value);
