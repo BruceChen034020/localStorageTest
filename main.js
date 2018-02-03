@@ -8,6 +8,8 @@ var buttonC;
 
 /* p5 functions */
 function setup(){
+  console.log(localStorage);
+
     textBoxA = document.getElementById("textBoxA");
     buttonA = document.getElementById("buttonA");
     textBoxB = document.getElementById("textBoxB");
@@ -19,14 +21,16 @@ function setup(){
     buttonB.addEventListener("click", buttonB_Clicked);
     buttonC.addEventListener("click", buttonC_Clicked);
 
-    textBoxA.innerHTML = localStorage.getItem("a");
+    //textBoxA.innerHTML = localStorage.getItem("a");
+    textBoxA.innerHTML = localStorage;
     textBoxB.innerHTML = localStorage.getItem("b");
     textBoxC.innerHTML = localStorage.getItem("c");
 }
 
 /* onlick events */
 function buttonA_Clicked(){
-  localStorage.setItem("a", textBoxA.value);
+  //localStorage.setItem("a", textBoxA.value);
+  localStorage = textBoxA.value;
 }
 function buttonB_Clicked(){
   localStorage.setItem("b", textBoxB.value);
